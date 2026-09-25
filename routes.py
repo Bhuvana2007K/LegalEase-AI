@@ -1,14 +1,14 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import Response
 
-from backend.schemas import (
+from schemas import (
     DocumentRequest,
     ExportRequest,
 )
-from backend.services.document_service import (
+
+from document_service import (
     gemini_service,
 )
-
 from document_utils.exporters import (
     export_docx,
     export_pdf,
