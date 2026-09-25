@@ -4,8 +4,7 @@ import time
 from dotenv import load_dotenv
 from google import genai
 
-from backend.schemas import DocumentRequest
-
+from schemas import DocumentRequest
 
 load_dotenv()
 
