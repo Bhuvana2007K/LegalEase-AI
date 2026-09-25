@@ -4,9 +4,9 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.routes import router
-from backend.schemas import HealthResponse
-from backend.services.document_service import gemini_service
+from routes import router
+from schemas import HealthResponse
+from document_service import gemini_service
 from document_utils.text_utils import parse_cors_origins
 
 
